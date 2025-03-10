@@ -1,0 +1,158 @@
+
+
+
+.bg-body-tertiary {
+    box-shadow: 2px 2px 4px gray;
+    padding-bottom: 10px;
+    margin-bottom: 1px;
+}
+.goals {
+    margin-left: 13px;
+    margin-bottom: 10px;
+}
+.me-auto {
+    margin-left: 50px;
+    gap: 50px;
+}
+.logoName {
+    color: rgb(2, 136, 232);
+    font-size: 25px;
+    font-weight: bolder;
+}
+.home {
+    color: darkgreen;
+}
+.navbar-item {
+    padding: 3px 30px;
+}
+#navbarScrollingDropdown {
+    color: rgb(2, 136, 232);
+    padding: 3px 8px;
+    border: 0.5px solid rgb(2, 136, 232);
+    border-radius: 2.5px;
+
+}
+/* .navbar-collapse {
+
+} */
+
+.d-block{
+    max-height: 80vh;
+}
+
+/* ****** footer ***** */
+.footer {
+    padding: 50px;
+    margin: 2px;
+    background-color: rgb(201, 205, 206);
+    border: 2px black;
+}
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.footer-links ul li {
+    margin: 10px;
+    list-style: none;
+}
+.footer-links ul h5 {
+    margin: 8px;
+}
+
+/* certificate_haading */
+
+.certificate_haading {
+    margin-top: 50px;
+    text-align: left;
+    margin-left: 35px;
+
+}
+
+.cards {
+
+    border-radius: 10px;
+    margin: 15px;
+    box-shadow: 2px 2px 8px gray;
+}
+
+
+.card_group {
+
+    margin: 20px;
+}
+
+/* icons */
+.icons {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+.LiaAdobe {
+    color: red;
+}
+.FaMicrosoft {
+    color: rgb(red, green, blue) ;
+}
+
+.FaPython {
+    color: yellowgreen;
+}
+.icon_name {
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: rgb(31, 102, 234);
+}
+.div_Image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-height: 100%;
+    max-width: 100%;
+    background-color: rgb(222, 242, 249);
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.div_Image Img{
+    max-width: 543px;
+    margin-top: -15px;
+}
+
+.div_Image_Contant h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.join_Button {
+    margin-top: 20px;
+}
+
+.image_students {
+    max-width: 280px;
+}
+
+.student_images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.student_detailes {
+    max-width: 290px;
+}
+
+.student_detailes h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(89, 90, 92);
+    font-size: 20px;
+}
+.course_comunity {
+    text-align: center;
+    margin: 20px;
+}
