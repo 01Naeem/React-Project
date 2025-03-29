@@ -1,158 +1,571 @@
-
-
-
 .bg-body-tertiary {
-    box-shadow: 2px 2px 4px gray;
-    padding-bottom: 10px;
-    margin-bottom: 1px;
+  box-shadow: 2px 2px 4px gray;
+  padding-bottom: 10px;
+  margin-bottom: 1px;
 }
 .goals {
-    margin-left: 13px;
-    margin-bottom: 10px;
+  margin-left: 13px;
+  margin-bottom: 10px;
 }
 .me-auto {
-    margin-left: 50px;
-    gap: 50px;
+  margin-left: 50px;
+  gap: 50px;
 }
 .logoName {
-    color: rgb(2, 136, 232);
-    font-size: 25px;
-    font-weight: bolder;
+  color: rgb(2, 136, 232);
+  font-size: 25px;
+  font-weight: bolder;
 }
+
 .home {
-    color: darkgreen;
+  color: rgb(2, 136, 232);
 }
 .navbar-item {
-    padding: 3px 30px;
+  padding: 3px 30px;
 }
 #navbarScrollingDropdown {
-    color: rgb(2, 136, 232);
-    padding: 3px 8px;
-    border: 0.5px solid rgb(2, 136, 232);
-    border-radius: 2.5px;
-
+  color: rgb(2, 136, 232);
+  padding: 3px 8px;
+  border: 0.5px solid rgb(2, 136, 232);
+  border-radius: 2.5px;
 }
-/* .navbar-collapse {
 
-} */
+/* course booking */
 
-.d-block{
-    max-height: 80vh;
+.course-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 20px;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.course-card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.course-image {
+  height: 200px;
+  background: #f5f5f5;
+  position: relative;
+}
+
+.course-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.course-tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ff5722;
+  color: white;
+  padding: 0.3rem 0.7rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+}
+
+.course-content {
+  padding: 1.5rem;
+}
+
+.course-price {
+  font-size: 1.5rem;
+  color: #4CAF50;
+  margin: 0.5rem 0;
+}
+
+.course-details {
+  list-style: none;
+  margin: 1rem 0;
+}
+
+.course-details li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+  color: #666;
+}
+
+.book-btn {
+  width: 100%;
+  padding: 1rem;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.free-badge {
+  background: #2196F3;
+  color: white;
+  padding: 0.3rem 0.7rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.d-block {
+  max-height: 80vh;
 }
 
 /* ****** footer ***** */
 .footer {
-    padding: 50px;
-    margin: 2px;
-    background-color: rgb(201, 205, 206);
-    border: 2px black;
+  padding: 50px;
+  margin: 2px;
+  background-color: rgb(201, 205, 206);
+  border: 2px black;
 }
 .footer-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .footer-links ul li {
-    margin: 10px;
-    list-style: none;
+  margin: 10px;
+  list-style: none;
 }
 .footer-links ul h5 {
-    margin: 8px;
+  margin: 8px;
 }
 
 /* certificate_haading */
 
 .certificate_haading {
-    margin-top: 50px;
-    text-align: left;
-    margin-left: 35px;
-
+  margin-top: 50px;
+  text-align: left;
+  margin-left: 35px;
 }
 
 .cards {
-
-    border-radius: 10px;
-    margin: 15px;
-    box-shadow: 2px 2px 8px gray;
+  border-radius: 10px;
+  margin: 15px;
+  box-shadow: 2px 2px 8px gray;
 }
 
-
 .card_group {
-
-    margin: 20px;
+  margin: 20px;
 }
 
 /* icons */
 .icons {
-    display: flex;
-    flex-direction: column;
-    font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  /* font-size: 25px; */
 }
 
 .LiaAdobe {
-    color: red;
+  color: red;
 }
 .FaMicrosoft {
-    color: rgb(red, green, blue) ;
+  color: rgb(red, green, blue);
 }
 
 .FaPython {
-    color: yellowgreen;
+  color: yellowgreen;
 }
 .icon_name {
-    font-size: 15px;
-    margin-bottom: 5px;
-    color: rgb(31, 102, 234);
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: rgb(31, 102, 234);
 }
 .div_Image {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    max-height: 100%;
-    max-width: 100%;
-    background-color: rgb(222, 242, 249);
-    margin-top: 80px;
-    margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  max-height: 100%;
+  max-width: 100%;
+  background-color: rgb(222, 242, 249);
+  margin-top: 80px;
+  margin-bottom: 50px;
 }
 
-.div_Image Img{
-    max-width: 543px;
-    margin-top: -15px;
+.div_Image Img {
+  max-width: 543px;
+  margin-top: -15px;
 }
 
-.div_Image_Contant h1{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 45px;
-    margin-bottom: 15px;
+.div_Image_Contant h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 45px;
+  margin-bottom: 15px;
 }
 
 .join_Button {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .image_students {
-    max-width: 280px;
+  max-width: 280px;
 }
 
 .student_images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
 }
 
 .student_detailes {
-    max-width: 290px;
+  max-width: 290px;
 }
 
 .student_detailes h6 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(89, 90, 92);
-    font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(89, 90, 92);
+  font-size: 20px;
 }
 .course_comunity {
-    text-align: center;
-    margin: 20px;
+  text-align: center;
+  margin: 20px;
+}
+
+.students_name {
+  color: rgb(126, 71, 126);
+}
+
+/* SignUp Form */
+
+.signup-section {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.signup-heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #2d3748;
+}
+
+.signup-subheading {
+  text-align: center;
+  color: #718096;
+  margin-bottom: 2rem;
+}
+
+.form-section {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.2rem;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.categories {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 3px;
+}
+
+.form-actions {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.signup-button {
+  width: 100%;
+  background: #4299e1;
+  color: white;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.signup-button:hover {
+  background: #3182ce;
+}
+
+.alternative-signup {
+  margin-top: 2rem;
+  text-align: center;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 1.5rem;
+}
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+}
+
+.login-redirect {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #718096;
+}
+
+/* Login form */
+
+.login-section {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #2d3748;
+}
+
+.login-subheading {
+  text-align: center;
+  color: #718096;
+  margin-bottom: 2rem;
+}
+
+.login-form {
+  margin-top: 1.5rem;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 15px;
+  top: 38px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
+.remember {
+  display: flex;
+  width: 50%;
+  gap: 10px;
+}
+
+.login-remember {
+  width: 12px;
+  margin-bottom: 4px;
+}
+
+.forgot-password {
+  color: #4299e1;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.login-button {
+  width: 100%;
+  padding: 1rem;
+  background: #48bb78;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-button:hover {
+  background: #38a169;
+}
+
+ .divider {
+  text-align: center;
+  position: relative;
+  margin: 2rem 0;
+  color: #718096;
+}
+
+.signup-redirect {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #718096;
+}
+
+
+/* Reuse social-auth styles from signup form */
+.social {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+}
+
+/* Course booking form */
+
+.form-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #34495e;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-top: 0.3rem;
+}
+
+.radio-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: normal;
+}
+
+input[type="radio"] {
+  margin: 0;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #219a52;
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  
+  .radio-group {
+    flex-direction: column;
+  }
 }

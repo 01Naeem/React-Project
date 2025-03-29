@@ -7,8 +7,10 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import "./style.css";
 import { NavbarText } from "react-bootstrap";
-import Carousel from "react-bootstrap/Carousel";
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
+import { VscAccount } from "react-icons/vsc";
+import { FaHome } from "react-icons/fa";
+
 // import coverImage from 'images/coverImage.jpg'
 
 const Layout = () => {
@@ -16,8 +18,8 @@ const Layout = () => {
     <>
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container fluid>
-          <Navbar.Brand href="#" className="logoName">
-            Book Your Course
+          <Navbar.Brand className="logoName">
+            <Link to="/" style={{textDecoration:"none"}}> Book Your Course</Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
@@ -62,8 +64,11 @@ const Layout = () => {
                   Fullstack
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="#action1" className="navbar-item home">
-                Home
+              <Nav.Link href="/" className="navbar-item home">
+                <FaHome /> Home
+              </Nav.Link>
+              <Nav.Link href="/login" className="navbar-item home">
+                <VscAccount className="VscAccount" /> Login
               </Nav.Link>
               {/* <Nav.Link href="#" disabled>
                 Link
@@ -81,82 +86,45 @@ const Layout = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <Carousel>
-        <Carousel.Item interval={1000}>
-          <img
-            src="./images/coverImage01.jpg"
-            className="d-block w-100"
-            alt="Second slide"
-          />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item interval={500}>
-          <img
-            src="./images/coverImage.jpg"
-            className="d-block w-100"
-            alt="Second slide"
-          />
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            src="./images/coverImage3.jpg"
-            className="d-block w-100"
-            alt="Second slide"
-          />
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
       <Outlet />
       <div className="footer">
         <footer className="footer-links">
-                <ul>
-                <h5>Technical Skills</h5>
-                  <li>Ethical Hacking</li>
-                  <li>Coding</li>
-                  <li>Cybersecurity</li>
-                  <li>Generative AI</li>
-                  <li>Python</li>
-                  <li>Java Programming</li>
-                </ul>
-                <ul>
-                <h5>Analytical Skills</h5>
-                  <li>Artificial Intellingence</li>
-                  <li>Big Data</li>
-                  <li>Data Analysis</li>
-                  <li>Data Analylitics</li>
-                  <li>Data Science</li>
-                  <li>Machine Learning</li>
-                </ul>
-                <ul>
-                <h5>Business Skills</h5>
-                  <li>Accunting</li>
-                  <li>Digital Marketing</li>
-                  <li>E-commerce</li>
-                  <li>Finance</li>
-                  <li>Google</li>
-                  <li>IBM</li>
-                </ul>
-                <ul>
-                <h5>Career Resources</h5>
-                  <li>Essential IT Certificate</li>
-                  <li>High-Income Skills to Learn</li>
-                  <li>How to Learn Artificial Intelligence</li>
-                  <li>How to Learn PMP Certificate</li>
-                  <li>Career Education Articles</li>
-                  <li>Career Development Resources</li>
-                </ul>
+          <ul>
+            <h5>Technical Skills</h5>
+            <li>Ethical Hacking</li>
+            <li>Coding</li>
+            <li>Cybersecurity</li>
+            <li>Generative AI</li>
+            <li>Python</li>
+            <li>Java Programming</li>
+          </ul>
+          <ul>
+            <h5>Analytical Skills</h5>
+            <li>Artificial Intellingence</li>
+            <li>Big Data</li>
+            <li>Data Analysis</li>
+            <li>Data Analylitics</li>
+            <li>Data Science</li>
+            <li>Machine Learning</li>
+          </ul>
+          <ul>
+            <h5>Business Skills</h5>
+            <li>Accunting</li>
+            <li>Digital Marketing</li>
+            <li>E-commerce</li>
+            <li>Finance</li>
+            <li>Google</li>
+            <li>IBM</li>
+          </ul>
+          <ul>
+            <h5>Career Resources</h5>
+            <li>Essential IT Certificate</li>
+            <li>High-Income Skills to Learn</li>
+            <li>How to Learn Artificial Intelligence</li>
+            <li>How to Learn PMP Certificate</li>
+            <li>Career Education Articles</li>
+            <li>Career Development Resources</li>
+          </ul>
         </footer>
       </div>
     </>
