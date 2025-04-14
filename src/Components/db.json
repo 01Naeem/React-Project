@@ -1,8 +1,137 @@
 {
-    "StudnetData" : [
-        {
-            "name" :"Naeem khan",
-            "age" : 22
-        }
-    ]
-}
+    "users": [
+      {
+        "id": 1,
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john.doe@example.com",
+        "password": "hashed_password_here",
+        "role": "student",
+        "phone": "+1234567890",
+        "address": "123 Main St, City, Country",
+        "createdAt": "2023-05-15T10:30:00Z",
+        "lastLogin": "2023-06-20T08:45:00Z"
+      },
+      {
+        "id": 2,
+        "firstName": "Jane",
+        "lastName": "Smith",
+        "email": "jane.smith@example.com",
+        "password": "hashed_password_here",
+        "role": "instructor",
+        "phone": "+1987654321",
+        "specializations": ["Web Development", "JavaScript"],
+        "bio": "Experienced web developer with 10+ years of experience",
+        "createdAt": "2023-04-10T09:15:00Z"
+      }
+    ],
+    
+    "courses": [
+      {
+        "id": 101,
+        "title": "Introduction to JavaScript",
+        "description": "Learn the fundamentals of JavaScript programming",
+        "category": "Web Development",
+        "instructorId": 2,
+        "duration": "4 weeks",
+        "price": 99.99,
+        "currency": "USD",
+        "level": "Beginner",
+        "thumbnail": "/images/js-course.jpg",
+        "createdAt": "2023-05-01T00:00:00Z",
+        "schedule": [
+          {
+            "id": 1001,
+            "startDate": "2023-07-10",
+            "endDate": "2023-08-07",
+            "days": ["Monday", "Wednesday"],
+            "time": "18:00-20:00",
+            "maxStudents": 20,
+            "currentStudents": 8,
+            "status": "open"
+          }
+        ],
+        "requirements": ["Basic computer skills"],
+        "learningOutcomes": ["Understand JavaScript syntax", "Build simple applications"]
+      },
+      {
+        "id": 102,
+        "title": "Advanced React",
+        "description": "Master React with advanced patterns and techniques",
+        "category": "Web Development",
+        "instructorId": 2,
+        "duration": "6 weeks",
+        "price": 149.99,
+        "currency": "USD",
+        "level": "Advanced",
+        "thumbnail": "/images/react-course.jpg",
+        "createdAt": "2023-05-15T00:00:00Z"
+      }
+    ],
+    
+    "bookings": [
+      {
+        "id": 10001,
+        "userId": 1,
+        "courseId": 101,
+        "scheduleId": 1001,
+        "bookingDate": "2023-06-15T14:30:00Z",
+        "status": "confirmed",
+        "payment": {
+          "amount": 99.99,
+          "currency": "USD",
+          "method": "credit_card",
+          "transactionId": "txn_123456789",
+          "status": "completed",
+          "paymentDate": "2023-06-15T14:32:00Z"
+        },
+        "attendance": []
+      }
+    ],
+    
+    "reviews": [
+      {
+        "id": 1,
+        "courseId": 101,
+        "userId": 1,
+        "rating": 5,
+        "comment": "Excellent course! The instructor was very knowledgeable.",
+        "createdAt": "2023-08-10T12:00:00Z"
+      }
+    ],
+    
+    "categories": [
+      {
+        "id": 1,
+        "name": "Web Development",
+        "description": "Courses about building websites and web applications"
+      },
+      {
+        "id": 2,
+        "name": "Data Science",
+        "description": "Courses about data analysis and machine learning"
+      }
+    ],
+    
+    "promotions": [
+      {
+        "id": 1,
+        "code": "SUMMER2023",
+        "discount": 20,
+        "discountType": "percentage",
+        "validFrom": "2023-06-01",
+        "validTo": "2023-08-31",
+        "maxUses": 100,
+        "currentUses": 42,
+        "minPurchase": 0
+      }
+    ],
+    
+    "settings": {
+      "currency": "USD",
+      "timezone": "UTC",
+      "bookingExpiry": 24,
+      "refundPolicy": "Full refund up to 7 days before course start",
+      "contactEmail": "support@coursebooking.com"
+    }
+  }
